@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+    
+        .navbar
+        {
+            width: 1350px;
+            height:60px;
+            background-color:rgb(239, 231, 226)
+        }
+        .navbar ul
+        {
+            font-size: 25px;
+            list-style: none;
+            display: flex;
+            color:rgb(0, 0, 0);
+            padding:20px;
+        }
+        .navbar ul li
+        {
+            padding-left: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main
+        {
+            display:flex;
+        }
+        .type
+        {
+            font-size: 75px;
+            margin-left:90px;
+            margin-top:130px;
+    
+        }
+        .image1
+        {
+            width:450px;
+            height:450px;
+            margin-left:200px;
+            margin-top:20px;
+            border-radius:100%;
+        }
+        .favicons
+        {
+            margin-left:950px;
+            padding:20px;
+        }
+        .fav1, .fav2, .fav3, .fav4
+        {
+            padding-right:10px;
+        }
+        .button1
+        {
+            border: none;
+            color: rgb(255, 255, 255);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 25px;
+            margin: 4px 2px;
+            background-color: rgb(107, 116, 246);
+            cursor: pointer;
+            margin-left:875px;
+            margin-right:100px;
+        }
+        body 
+        {
+            background-image: url('bg.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="PORTFOLIO1.html" class="button">Home</a></li>
+            <li><a href="PORTFOLIO2.html" class="button">Projects</a></li>
+            <li><a href="PORTFOLIO3.html" class="button">Certifications</a></li>
+            <li><a href="PORTFOLIO4.html" class="button">Contacts</a></li>
+            <li><a href="PORTFOLIO5.html" class="button">Queries</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <h1 class="type">Hello, <br> This is Monika S</h1>
+        <img id="profimg" class="image1" src="MONIKA.jpeg" alt="Monika">
+    </div>
+    <div>
+        <br>
+        <button class="button1" onclick="changeimgnext()">Change Image</button>
+        <br>
+    </div>
+    <script>
+        function changeimgnext() 
+        {
+            document.getElementById("profimg").src = "Moni pic.jpg";
+        }
+    </script>
+</body>
+</html>
